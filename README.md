@@ -30,9 +30,9 @@ Ruby/Rails programming conventions have been maintained as much as possible. Dev
 
 Setup is very easy and straight-forward. Essentially, you have to point to the locales folder, and that's pretty much it.
 
-You can use _I18n::push\_load\_path(__PATH\_TO\_LOCALE__)_ to load a specific file, such as
+You can use _I18n::set\_load\_path([__PATH\_TO\_A\_LOCALE__])_ to load a specific file, such as
 
-    I18n::push_load_path('/home/myapp/locales/fr.yml');
+    I18n::set_load_path(['/home/myapp/locales/fr.yml', '/home/myapp/locales/en.yml']);
 
 ### Installing required PEAR package ###
 pear channel-discover pear.symfony-project.com  
